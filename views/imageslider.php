@@ -12,10 +12,12 @@ $baseUrl = $widget->baseUrl;
 	<div class="carousel-inner" style="width:<?= isset($widget->width) ? $widget->width.';': '100%'?>;height:<?= isset($widget->height) ? $widget->height.';': '100%' ?>;">
             <?php foreach ($widget->images as $image) : ?>
                     <div class="item <?= isset($image['active']) ? 'active': '';?>">
-                            <img src="<?= $baseUrl.'/'.$image['src'] ?>" 
-                            width="<?= isset($image['width']) ? $image['width'].';': '100%' ?>"
-                            height="<?= isset($image['height']) ? $image['height'].';': '100%' ?>"
-                            class="<?= isset($widget->classes) ? $widget->classes: '';?>">
+			    <a href="<?= isset($image['url']) ? $image['url'] : "#"?>" target="<? isset($image['url']) ? "_blank" : "" ?>">
+				    <img src="<?= $baseUrl.'/'.$image['src'] ?>" 
+				    width="<?= isset($image['width']) ? $image['width'].';': '100%' ?>"
+				    height="<?= isset($image['height']) ? $image['height'].';': '100%' ?>"
+				    class="<?= isset($widget->classes) ? $widget->classes: '';?>">
+			    </a>
                             <div class="carousel-caption">
                                     <?= isset($image['caption']) ? $image['caption']: '';?>
                             </div>
