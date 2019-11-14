@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require aki/yii2-image-slider "*"
+php composer.phar require bmanop20/yii2-image-slider "*"
 ```
 
 or add
 
 ```
-"aki/yii2-image-slider": "*"
+"bmanop20/yii2-image-slider": "*"
 ```
 
 to the require section of your `composer.json` file.
@@ -28,7 +28,7 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \aki\imageslider\ImageSlider::widget([
+<?= \bmanop20\imageslider\ImageSlider::widget([
 	'baseUrl' => Yii::getAlias('@web/images'),
     'nextPerv' => false,
     'indicators' => false,
