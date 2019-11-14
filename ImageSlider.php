@@ -1,9 +1,9 @@
 <?php
 
-namespace aki\imageslider;
+namespace bmanop20\imageslider;
 
 use Yii;
-use aki\imageslider\ImageSilderAsset;
+use bmanop20\imageslider\ImageSilderAsset;
 //Yii::setAlias('@view', $path)
 /**
 * @author <akbar.joody@gmail.com> Akbar Joudi
