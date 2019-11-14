@@ -1,5 +1,5 @@
 <?php
-namespace aki\imageslider;
+namespace bmanop20\imageslider;
 /**
 * @author <akbar.joody@gmail.com>
 */
